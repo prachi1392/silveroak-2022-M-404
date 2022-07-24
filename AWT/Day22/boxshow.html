@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+function moveleft(){
+    document.getElementById("box").style.marginLeft ="200px";
+    document.getElementById("box").style.backgroundColor = 'blue';
+    document.getElementById("top").style.backgroundColor = 'black';
+    document.getElementById("top").style.borderColor = 'black';
+    document.getElementById("top").style.color = 'white';
+    document.getElementById("left").style.backgroundColor = 'white';
+    document.getElementById("left").style.borderColor = 'white';
+    document.getElementById("left").style.color = 'white';
+}
+function movetop(){
+    document.getElementById("box").style.marginTop="-5px";
+    document.getElementById("box").style.backgroundColor = 'navy';
+    document.getElementById("down").style.backgroundColor = 'black';
+    document.getElementById("down").style.borderColor = 'black';
+    document.getElementById("down").style.color = 'white';
+    document.getElementById("top").style.backgroundColor = 'white';
+    document.getElementById("top").style.borderColor = 'white';
+    document.getElementById("top").style.color = 'white';
+}
+function movedown(){
+    document.getElementById("box").style.marginTop="300px";
+    document.getElementById("box").style.backgroundColor = '#2c436e';
+    document.getElementById("down").style.backgroundColor = 'white';
+    document.getElementById("down").style.borderColor = 'white';
+    document.getElementById("down").style.color = 'white';
+    document.getElementById("left").style.backgroundColor = 'black';
+    document.getElementById("left").style.borderColor = 'black';
+    document.getElementById("left").style.color = 'white';
+}
+
+
+</script>
+<style>
+    #box{
+       height:150px;
+       width:150px;
+       background-color: aqua;
+       margin-top:200px;
+}
+</style>
+
+</head>
+
+<body>
+    <div id="box">
+
+    </div>
+    
+    <button id="left" onclick="moveleft()"style="border: white;">right</button>
+    <button id="top" onclick="movetop()" style="background-color: white;
+    border: white;
+    color: white;">top</button>
+    <button id="down" onclick="movedown()" style="background-color: white;
+    border: white;
+    color: white;">down</button>
+    
+</body>
+</html>

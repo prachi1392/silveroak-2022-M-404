@@ -1,0 +1,45 @@
+<HTML>
+ <HEAD>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <style>
+    .txtErr{
+      border:1px solid red; 
+   }
+</style>
+<script>
+
+$(document).ready(function(){
+   $(".lnk").click(function(){
+              var color = $("#"+this.id).data('color') ;
+              $("#circle").css("display","block");
+              $("#circle").css("height","500px");
+                 $("#circle").css("width","500px");
+                            $("#circle").css("border-radius","100%");
+                      $("#circle").css("background-color",color);
+  } );
+
+
+$(".lnkHide").click(function(){
+         $("#circle").hide(1000);
+});
+$(".lnkShow").click(function(){
+         $("#circle").show(1000);
+});
+
+
+});
+
+
+
+  </SCRIPT>
+</HEAD>
+<BODY>
+
+<a href="#" id="lnkRed" class="lnk" data-color="Red" > Red </a> | <a href="#" id="lnkGreen"  class="lnk" data-color="Green"> Green </a> | <a href="#" id="lnkBlue"  class="lnk" data-color="Blue"> Blue </a>  | <a href="#"  class="lnkHide"> Hide </a> | | <a href="#"  class="lnkShow"> Show </a>
+
+<div id="circle"> </div>
+
+
+</BODY>
+
+</HTML>

@@ -1,0 +1,49 @@
+<html>
+  <head>
+<style>
+#circle{
+height:100px;
+width:100px;
+border-radius:50%;
+background-color:red;
+}
+</style>
+
+   <script>
+       function bgRed(){
+           var circleDiv = document.getElementById("circle");
+           circleDiv.style.backgroundColor = "red";
+        } 
+
+  function bgGreen(){
+           var circleDiv = document.getElementById("circle");
+           circleDiv.style.backgroundColor = "green";
+        }     
+  function bgBlue(){
+           var circleDiv = document.getElementById("circle");
+           circleDiv.style.backgroundColor = "blue";
+        }  
+
+
+
+function changeBG(color){
+   var circleDiv = document.getElementById("circle");
+    circleDiv.style.backgroundColor = color;
+}
+   </script>
+  </head>
+  <body>
+
+<a href="#" onClick="bgRed()"> Red  </a> | <a href="#" onClick="bgGreen()"> Green </a> | <a href="#" onClick="bgBlue()"> Blue </a> 
+
+
+<a href="#" onClick="changeBG('red')"> Red  </a> | <a href="#" onClick="changeBG('green')"> Green </a> | <a href="#" onClick="changeBG('blue')"> Blue </a> 
+
+
+
+    <div id="circle"> </div>
+   
+  </body>
+
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+   $(document).ready(function() {
+    //To hide the menu
+     $(".hidediv").click(function () {
+     $(".men_ex").hide("fast",function(){
+      
+    });
+   });0
+    //To show the menu
+     $(".showdiv").click(function () {
+     $(".men_ex").show(2000,function(){
+
+    });
+   });
+   //to show table
+   $(".showstudent").click(function () {
+    $(".table_bg").show(2000,function(){
+    });
+   });   
+
+});      
+</script>
+
+
+
+
+<style>
+.men_ex{
+    border-radius:5px;
+}
+.men_ex ul {
+    margin: 0; 
+    padding: 0;
+    width:185px;
+    list-style-type: none;
+    
+}
+.men_ex ul li a {
+    text-decoration: none;
+    color: #fff; 
+    padding: 10.5px 11px;
+    background-color: #3E5F74;
+    display:block;
+    border-bottom:solid 1px #000;
+}
+.men_ex ul li a:visited {
+    color: white;
+}
+.men_ex ul li a:hover, .men_ex ul li .current {
+    color: #000;
+    background-color: #B1C7D6;
+}
+
+.show_hide{
+   position:fixed;
+   margin: 30px 30px;
+}
+</style>
+</head>
+
+<body>
+  
+<h1>jQuery hide/show demo</h1>
+<div class="men_ex">
+<ul>
+<button class="showstudent">Student</button>
+<div class="table_bg">
+<table class="table_bg">
+    <tr>
+     <th>ID</th>
+     <th>Name</th>
+     <th>Age</th>
+     <th>Salary</th>
+    </tr>
+    <tr>
+     <td>1</td>
+     <td>Jim</td>
+     <td>35</td>
+     <td>$5000.00</td>
+    </tr>
+    <tr>
+     <td>2</td>
+     <td>Anna</td>
+     <td>24</td>
+     <td>$3500.00</td>
+    </tr>
+    <tr>
+     <td>3</td>
+     <td>Adams</td>
+     <td>31</td>
+     <td>$4000.00</td>
+    </tr>
+    <tr>
+     <td>4</td>
+     <td>Adams</td>
+     <td>31</td>
+     <td>$4000.00</td>
+    </tr>
+    <tr>
+     <td>5</td>
+     <td>Adams</td>
+     <td>31</td>
+     <td>$4000.00</td>
+    </tr>        
+</table>
+</div>
+<li><a href="#">Teachers</a></li>
+<li><a href="#">workers</a></li>
+
+</ul>
+</div>
+
+<p><button class="hidediv">Hide menu</button>
+<button class="showdiv">Show menu</button>
+</p>  
+
+</body>
+</html>
+

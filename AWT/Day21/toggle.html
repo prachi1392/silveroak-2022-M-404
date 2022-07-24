@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+ <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"> </script>
+   <script>
+   
+   $(document).ready(function() {
+     $("#show_hide").click(function () {
+         $("#toggle_tst").toggle(1500,"easeOutQuint",function(){
+          alert("A callback function as .toggle completes!");
+          });
+  });  
+  });
+   </script>
+
+<style>
+#toggle_tst{
+	padding: 8px;
+    background:#0d3b63;
+	width: 250px;
+    height:250px;
+	box-shadow: 0 0 5px #aaa;
+    font-size: 25px;
+    color:#fff;
+    text-align:center;
+    border-radius: 150px;
+    line-height: 150px;
+}
+button{
+   margin: 30px 60px;
+    
+}
+</style>
+</head>
+
+<body>
+<button id="show_hide">Show/Hide Circle</button> 
+   <div id="toggle_tst">
+     The Toggle Demo!
+   </div>
+
+
+</body>
+</html>
+
